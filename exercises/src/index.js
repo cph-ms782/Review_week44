@@ -6,8 +6,9 @@ import App2 from './monday/App2'
 import App3 from './tuesday/App3'
 import App4 from './tuesday/App4'
 import App5 from './wednesday/App5'
+import FormDemo from './wednesday/FormDemo'
 
-let app = <App5 />
+let app = <FormDemo />
 
 const DontUseMeForReal = () => {
     return (
@@ -16,9 +17,10 @@ const DontUseMeForReal = () => {
          <a href="/" className="x" id="app2">Exercise 2</a> &nbsp;
          <a href="/" className="x" id="app3">Exercise 1 (tues)</a> &nbsp;
          <a href="/" className="x" id="app4">Exercise 2 (tues)</a> &nbsp;
-         <a href="/" className="x" id="app5">Exercise 1 (wed)</a> &nbsp;
+         <a href="/" className="x" id="formdemo">Exercise 1 (wed)</a> &nbsp;
+         <a href="/" className="x" id="app5">test)</a> &nbsp;
          {/* Add as many as you have exercises, but remember className="x" */}
-            <h1>Monday/tuesday week 44</h1>
+            <h1>Exercises Week 44</h1>
             {app}
         </div>
     )
@@ -35,6 +37,7 @@ function handleSelect(event) {
         case "app2": app = <App2 />; break;
         case "app4": app = <App4 />; break;
         case "app5": app = <App5 />; break;
+        case "formdemo": app = <FormDemo />; break;
         default: app = <App3 number={2} />; break;
     }
     ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));

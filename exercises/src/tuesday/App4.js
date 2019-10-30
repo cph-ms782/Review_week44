@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { } from 'react';
 import '../App.css';
 
 // week 44 tuesday
@@ -30,15 +30,15 @@ function App4() {
     //     );
     // });
 
-    function timere() {
-        return (
-            <div className="App4">
-                <h2>Exercise 2 tuesday</h2>
-                <h3>State and Events with React</h3>
-                {/* <h4>Time is: {getTime}</h4> */}
-            </div>
-        )
-    }
+    // function timere() {
+    //     return (
+    //         <div className="App4">
+    //             <h2>Exercise 2 tuesday</h2>
+    //             <h3>State and Events with React</h3>
+    //             {/* <h4>Time is: {getTime}</h4> */}
+    //         </div>
+    //     )
+    // }
 }
 
 export default App4;

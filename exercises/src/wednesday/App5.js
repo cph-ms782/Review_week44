@@ -1,19 +1,30 @@
+import React, { useState } from 'react';
 
-import React, { useState, useEffect } from 'react';
-import '../App.css';
+const App5 = () => {
+    const initialState = { name: "", age: null, email: "" };
 
-// week 44 wednesday
-//Forms and Controlled Components
+    const handleSubmit = (evt) => { console.log("evt", evt) }
 
-function App5() {
+    const handleInput = (event) => { console.log("evt", event) }
 
     return (
-        <div className="App5">
-            <h2>Exercise 1 wednesday</h2>
-            <h3>Forms and Controlled Components</h3>
-        </div >
-    )
+        <div style={{ marginTop: 25 }}>
+            <form onSubmit={handleSubmit} onChange={handleInput}>
+                <input id="name" type="text"
+                    placeholder="Name" />
+                <br />
+                <input id="age" type="number"
+                    placeholder="Age" />
+                <br />
+                <input id="email" type="text"
+                    placeholder="email" />
+                <br />
+                <button >Submit</button>
+            </form>
+        </div>
+    );
 }
 
-
 export default App5;
+
+
