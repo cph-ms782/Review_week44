@@ -41,6 +41,7 @@ function ReservationForm() {
         <div>
             <form>
                 <h2>Exercise 2 wednesday</h2>
+                <h3>Forms with React</h3>
                 <h3>Handling multiple inputs</h3>
                 <label>Pay by Credit Card: </label>
                 <input

@@ -18,6 +18,7 @@ const NameForm = () => {
     return (
         <div>
             <h2>Exercise 1 wednesday</h2>
+            <h3>Forms with React</h3>
             <h3>Forms and Controlled Components</h3>
             <form onChange={handleChange}>
                 <label>
