@@ -9,7 +9,7 @@ import App5 from './wednesday/App5'
 import FormDemo from './wednesday/FormDemo'
 import FormDemoMultiple from './wednesday/FormDemoMultiple'
 
-let app = <FormDemoMultiple />
+let app = <App5 />
 
 const DontUseMeForReal = () => {
     return (
@@ -20,7 +20,7 @@ const DontUseMeForReal = () => {
          <a href="/" className="x" id="app4">Exercise 2 (tues)</a> &nbsp;
          <a href="/" className="x" id="formdemo">Exercise 1 (wed)</a> &nbsp;
          <a href="/" className="x" id="formdemomultiple">Exercise 2 (wed)</a> &nbsp;
-         <a href="/" className="x" id="app5">test)</a> &nbsp;
+         <a href="/" className="x" id="app5">Lifting State Up (wed)</a> &nbsp;
          {/* Add as many as you have exercises, but remember className="x" */}
             <h1>Exercises Week 44</h1>
             {app}

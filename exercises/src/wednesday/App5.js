@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TodoList from "./TodoList"
 import NewTodo from "./NewTodo"
 import uuid from "uuid/v1";
 
-function App() {
+function App5() {
   const initialData = [
     { id: uuid(), todoText: "Wake up" },
     { id: uuid(), todoText: "Make Coffee" },
@@ -24,12 +24,12 @@ function App() {
       todoToEdit.todoText = todo.todoText;
     }
     setTodos([...todos]);
-    setNewTodo({id:"", todoText:""})
+    setNewTodo({ id: "", todoText: "" })
   };
-  
+
   return (
     <div className="container outer">
-      <h2 style={{ textAlign: "center", marginBottom:25 }}>
+      <h2 style={{ textAlign: "center", marginBottom: 25 }}>
         Props and Lifting State Demo
       </h2>
 
@@ -40,11 +40,11 @@ function App() {
         <div className="col-5 new-todo">
           <NewTodo
             addTodo={addTodo}
-            nextTodo={newTodo}            
+            nextTodo={newTodo}
           />
         </div>
       </div>
     </div>
   );
 }
-export default App;
+export default App5;

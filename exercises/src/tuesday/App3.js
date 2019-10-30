@@ -6,18 +6,19 @@ import '../App.css';
 
 function App3() {
 
-    ;
-    //Returns value as a string
-
     // 1c+1c.
+    var oldNumber = localStorage.getItem("count");
+    console.log("oldNumber", oldNumber)
+    if (oldNumber === undefined) { oldNumber = 0 }
     return (
-        <Help number={localStorage.getItem("count")} inc={5} />
+        <Help number={oldNumber} inc={5} />
     )
 }
 
 // 1d.
 function Help(props) {
     useEffect(() => {
+        console.log("saving old number in session")
         localStorage.setItem("count", count)
     });
 
