@@ -9,7 +9,7 @@ const App5 = () => {
 
     return (
         <div style={{ marginTop: 25 }}>
-            <form onSubmit={handleSubmit} onChange={handleInput}>
+            <form onChange={handleInput}>
                 <input id="name" type="text"
                     placeholder="Name" />
                 <br />
@@ -19,7 +19,7 @@ const App5 = () => {
                 <input id="email" type="text"
                     placeholder="email" />
                 <br />
-                <button >Submit</button>
+                <button onClick={handleSubmit}>Submit</button>
             </form>
         </div>
     );

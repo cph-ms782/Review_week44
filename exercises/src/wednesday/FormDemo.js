@@ -19,16 +19,14 @@ const NameForm = () => {
         <div>
             <h2>Exercise 1 wednesday</h2>
             <h3>Forms and Controlled Components</h3>
-            <form onSubmit={handleSubmit} onChange={handleChange}>
+            <form onChange={handleChange}>
                 <label>
                     Name:
     <input type="text" name="name" />
                 </label>
-                <input type="submit" value="Submit" />
+                <button onClick={handleSubmit}>Submit</button>
             </form>
             {name}
-            <p>Could get onSubmit to fire. So Submit button doesn't work</p>
-            <p>But onChange works fine when typing</p>
         </div>
     );
 };
