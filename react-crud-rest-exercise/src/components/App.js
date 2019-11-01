@@ -69,15 +69,14 @@ function App({ apiFacade }) {
       console.log("editData");
       try {
         const promise = await apiFacade.addEditPerson(person);
-        const data = await apiFacade.getPersonsV2();
+        // const data = await apiFacade.getPersonsV2();
+        setPersonToAddEdit(promise);
         console.log("promise", promise);
       } catch (e) {
         console.log("err", e);
       }
     }
     editData();
-    setPersonToAddEdit(person);
-
   }
 
 

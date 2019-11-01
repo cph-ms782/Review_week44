@@ -51,7 +51,6 @@ function apiFacade() {
 
   async function deletePerson(id) {
     //Complete me
-    // const deleteObj = {};
     const options = makeOptions("DELETE");
     const data = await fetch(URL + "/" + id, options).then(handleHttpErrors);
     return data;
