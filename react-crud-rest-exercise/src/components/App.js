@@ -33,10 +33,11 @@ function App({ apiFacade }) {
   const storeAddEditPerson = (person) => {
     //Call this from the AddEditPerson control with the person to Add or Edit and Add/Edit via the apiFacade
     const postData = async () => {
+      console.log("postData");
       try {
         const promise = await apiFacade.addEditPerson(person);
         const data = await apiFacade.getPersonsV2();
-        console.log("data, promise", data, promise);
+        console.log("promise", promise);
         setPersons(data);
       } catch (e) {
         console.log("err", e);
@@ -47,11 +48,36 @@ function App({ apiFacade }) {
 
   const deletePerson = (id) => {
     //Call this from the AllPerson control with the id for the person to delete
+    const deleteData = async () => {
+      console.log("deleteData");
+      try {
+        const promise = await apiFacade.deletePerson(id);
+        const data = await apiFacade.getPersonsV2();
+        console.log("promise", promise);
+        setPersons(data);
+      } catch (e) {
+        console.log("err", e);
+      }
+    }
+    deleteData();
   }
 
   const editPerson = (person) => {
     //Call thisfrom the AllPerson control with the  person to edit
     //Set the state variable personToAddEdit with this person (a clone) to make the new value flow down via props
+    const editData = async () => {
+      console.log("editData");
+      try {
+        const promise = await apiFacade.addEditPerson(person);
+        const data = await apiFacade.getPersonsV2();
+        console.log("promise", promise);
+      } catch (e) {
+        console.log("err", e);
+      }
+    }
+    editData();
+    setPersonToAddEdit(person);
+
   }
 
 
@@ -72,7 +98,7 @@ function App({ apiFacade }) {
           <AddEditPerson
             newPerson={personToAddEdit}
             //  Next two lines, are if you decide to use the pattern introduced in the day-2 exercises
-            addEditPerson={storeAddEditPerson}
+            storeAddEditPerson={storeAddEditPerson}
             key={personToAddEdit.id}
           />
         </div>

@@ -38,13 +38,23 @@ function apiFacade() {
 
   async function addEditPerson(person) {
     //Complete me. A smart version will handle both Add and Edit, but focus on Add (POST) only first
-    const options = makeOptions("POST", person);
-    const data = await fetch(URL, options).then(handleHttpErrors);
-    return data;
+    if (person.id === undefined) {
+      const options = makeOptions("POST", person);
+      const data = await fetch(URL, options).then(handleHttpErrors);
+      return data;
+    } else {
+      const options = makeOptions("PUT", person);
+      const data = await fetch(URL + "/" + person.id, options).then(handleHttpErrors);
+      return data;
+    }
   }
 
-  function deletePerson(id) {
+  async function deletePerson(id) {
     //Complete me
+    // const deleteObj = {};
+    const options = makeOptions("DELETE");
+    const data = await fetch(URL + "/" + id, options).then(handleHttpErrors);
+    return data;
   }
 
   return {

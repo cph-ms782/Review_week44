@@ -18,7 +18,14 @@ export default function AddEditPerson(props) {
     evt.preventDefault();
     console.log("submit");
     console.log("person", person);
-    apiFacade.addEditPerson(person);
+    props.storeAddEditPerson(person);
+  }
+  const handleCancel = (evt) => {
+    evt.preventDefault();
+    console.log("cancel");
+    console.log("person", person);
+    const emptyPerson = { id: "", age: "", name: "", email: "", gender: "" };
+    setPerson(emptyPerson);
   }
 
 
@@ -28,7 +35,9 @@ export default function AddEditPerson(props) {
         <div className="form-group">
           <label className="control-label col-sm-3">Id:</label>
           <div className="col-sm-9">
-            <input className="form-control" readOnly id="id" />
+            <input className="form-control"
+              readOnly id="id"
+              value={person.id} />
           </div>
         </div>
         <div className="form-group">
@@ -98,6 +107,7 @@ export default function AddEditPerson(props) {
               Submit
             </button>
             <button
+              onClick={handleCancel}
               style={{ marginLeft: 5 }}
               type="button"
               className="btn btn-dark"

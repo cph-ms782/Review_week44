@@ -23,7 +23,7 @@ export default function AllPersons(props) {
                   deletePerson(person.id);
                 }
               }> delete </a></td>
-              <td><a href="#/" onClick={() => editPerson(person.id)}> edit </a></td>
+              <td><a href="#/" onClick={() => editPerson(person)}> edit </a></td>
             </tr>
           ))}
         </tbody>
