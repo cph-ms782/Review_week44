@@ -3,33 +3,37 @@ import CountryTable from "./CountryTable";
 import './App.css';
 import countryFacade from './countryFacade';
 
-const App = (props) => {
+const App = ({ factory }) => {
   const [labels, setLabels] = useState([]);
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    const getLabels = async () => {
-      console.log("getLabels");
-      try {
-        const data = await countryFacade.getLabels();
-        console.log("Labels", data);
-        setLabels(data);
-      } catch (e) {
-        console.log("err", e);
+    setInterval(() => {
+      const getLabels = async () => {
+        console.log("getLabels");
+        try {
+          const data = await factory.getLabels();
+          console.log("Labels", data);
+          setLabels(data);
+        } catch (e) {
+          console.log("err", e);
+        }
       }
-    }
-    getLabels();
-    const getCountries = async () => {
-      console.log("getCountries");
-      try {
-        const data = await countryFacade.getCountries();
-        console.log("Countries", data);
-        setCountries(data);
-      } catch (e) {
-        console.log("err", e);
+      getLabels();
+      const getCountries = async () => {
+        console.log("getCountries");
+        try {
+          const data = await factory.getCountries();
+          console.log("Countries", data);
+          setCountries(data);
+        } catch (e) {
+          console.log("err", e);
+        }
       }
-    }
-    getCountries();
+      getCountries();
+      console.log("refrezh")
+    }, 3000);
+
   }, []);
 
 
