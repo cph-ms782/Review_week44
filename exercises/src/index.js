@@ -9,7 +9,7 @@ import App5 from './wednesday/App5'
 import FormDemo from './wednesday/FormDemo'
 import FormDemoMultiple from './wednesday/FormDemoMultiple'
 
-let app = <App5 />
+let app = <App4 />
 
 const DontUseMeForReal = () => {
     return (

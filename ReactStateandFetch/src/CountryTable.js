@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CountryTable = (props) => {
   console.log("CountryTable");
   const { labels, countries } = props;
+  const [tableCountries, setTableCountries] = useState(props.countries.filter((country, index) => index >= 0 && index <= 4));
+
+  const lower = (evt) => {
+    evt.preventDefault();
+    console.log("lower");
+    if (lnum > 3) {
+      hnum -= 4;
+      lnum -= 4;
+      setTableCountries(props.countries.filter((country, index) => index >= lnum && index <= hnum));
+      console.log("lower tableCountries", tableCountries)
+      console.log("lnum", lnum)
+      console.log("hnum", hnum)
+    }
+  };
+  const higher = (evt) => {
+    evt.preventDefault();
+    console.log("higher");
+    console.log("lnum", lnum)
+    console.log("hnum", hnum)
+    hnum = hnum + 4;
+    lnum = lnum + 4;
+    setTableCountries(props.countries.filter((country, index) => index >= lnum && index <= hnum));
+    console.log("higher tableCountries", tableCountries)
+    console.log("lnum", lnum)
+    console.log("hnum", hnum)
+  };
+
+
   return (
     <div>
       <p>Replace the thead section with a row generated from the Labels endpoint</p>
@@ -17,7 +45,7 @@ const CountryTable = (props) => {
 
         </thead>
         <tbody>
-          {countries.map((country) => (
+          {tableCountries.map((country) =>
             <tr key={country.id}>
               <td>{country.name}</td>
               <td>{country.capital}</td>
@@ -40,9 +68,19 @@ const CountryTable = (props) => {
                 {country.languages.length > 1 ? " (+" + (country.languages.length - 1) + ")" : ""}
               </td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
+      <form className="form-horizontal">
+        <button
+          onClick={lower}
+          className="btn btn-dark"
+        >Lower</button>
+        <button
+          onClick={higher}
+          className="btn btn-dark"
+        >Higher</button>
+      </form>
     </div>
   );
 };
