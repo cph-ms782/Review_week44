@@ -3,18 +3,18 @@
 
 # Monday  
 [All Monday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/monday)  
-###JavaScript/React  
+#### JavaScript/React  
 [1 Understanding ES6 Modules – import and export](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App.js) - 100% done  
 [2 Object and Array Destructuring](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App2.js) - 100% done  
 3 Composing Components - 0% done  
 
 # Tuesday  
 [All tuesday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/tuesday)  
-###State and Events with React  
+#### State and Events with React  
 [1](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App3.js) - 100% done  
 [2](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App4.js) - 100% done  
 [3 (plus more files) - use "All tuesday files"-link to see them](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/AppJokes.js) - 100% done  
-####Exercises Lists and Keys  
+#### Exercises Lists and Keys  
 [1 Lists and Keys](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/ListDemoApp.js) - 100% done  
 [2 List and Keys continued](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/ListDemoApp2.js) - 100% done  
 
@@ -39,7 +39,7 @@ _**setState()**_
 
 # Wednesday  
 [All wednesday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/wednesday)  
-###Forms with React  
+#### Forms with React  
 [Forms and Controlled Components](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/FormDemo.js) - 100% done  
 [Handling multiple inputs](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/FormDemoMultiple.js) - 100% done  
 
@@ -64,7 +64,7 @@ _**We want to remain on the client and not go to the server. It prevents a blink
 _**A single source of truth keeps a tap on data received from forms and updates values when changes occur**_  
 
 
-###Lifting State  
+#### Lifting State  
 [Lifting State Up (plus more files)](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/App5.js) - 100% done  
 [6  Lifting State Up 2]() - 0% done  
 
@@ -83,12 +83,12 @@ _**You get single source of truth. The parent componenet handles things**_
 
 # Thursday  
 [All thursday files](https://github.com/cph-ms782/Review_week44/tree/master/react-crud-rest-exercise/src/components)  
-####	Api Interaction with fetch  
+#### Api Interaction with fetch  
 API Interaction using fetch (fall 2019) - 100% done  
 
 # Friday  
 [All friday files](https://github.com/cph-ms782/Review_week44/tree/master/ReactStateandFetch/src)  
-###Exam preparation exercise  
+#### Exam preparation exercise  
 React, State and Fetch - 80% done  
 
 
