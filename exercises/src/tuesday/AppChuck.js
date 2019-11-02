@@ -7,7 +7,6 @@ function AppChuck(props) {
     return (
         <div className="AppChuck">
             {props.fact}
-
         </div>
     )
 }

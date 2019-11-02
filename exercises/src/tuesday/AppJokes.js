@@ -47,30 +47,12 @@ function AppJokes() {
         getFacts();
     }
 
-    const handleDadJoke = (e) => {
-        e.preventDefault();
-        const getDadJokes = async () => {
-            console.log("getDadJokes");
-            try {
-                const data = await facade.getDadJokes();
-                console.log("data", data);
-                setJoke(data.joke);
-            } catch (err) {
-                console.log("err", err);
-            }
-        }
-        getDadJokes();
-    }
-
     return (
         <div className="AppJokes">
             <h2>Exercise 3 tuesday</h2>
             <h3>State and Events with React</h3>
             <form>
                 <button onClick={handleChuck}>Get ChuckNorris</button>
-            </form>
-            <form>
-                <button onClick={handleDadJoke}>Get DadJoke</button>
             </form>
             <AppChuck fact={fact} />
             <br />
