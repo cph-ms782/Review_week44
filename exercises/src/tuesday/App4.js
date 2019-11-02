@@ -6,7 +6,7 @@ import '../App.css';
 function App4() {
 
     const [time, setTime] = useState("");
-
+    console.log(time);
     useEffect(() => {
         const interval = setInterval(() => {
 

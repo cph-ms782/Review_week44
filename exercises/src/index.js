@@ -5,11 +5,12 @@ import App from './monday/App';
 import App2 from './monday/App2'
 import App3 from './tuesday/App3'
 import App4 from './tuesday/App4'
+import AppJokes from './tuesday/AppJokes'
 import App5 from './wednesday/App5'
 import FormDemo from './wednesday/FormDemo'
 import FormDemoMultiple from './wednesday/FormDemoMultiple'
 
-let app = <App4 />
+let app = <AppJokes />
 
 const DontUseMeForReal = () => {
     return (
@@ -18,6 +19,7 @@ const DontUseMeForReal = () => {
          <a href="/" className="x" id="app2">Exercise 2</a> &nbsp;
          <a href="/" className="x" id="app3">Exercise 1 (tues)</a> &nbsp;
          <a href="/" className="x" id="app4">Exercise 2 (tues)</a> &nbsp;
+         <a href="/" className="x" id="appjokes">Exercise 3 (tues)</a> &nbsp;
          <a href="/" className="x" id="formdemo">Exercise 1 (wed)</a> &nbsp;
          <a href="/" className="x" id="formdemomultiple">Exercise 2 (wed)</a> &nbsp;
          <a href="/" className="x" id="app5">Lifting State Up (wed)</a> &nbsp;
@@ -38,6 +40,7 @@ function handleSelect(event) {
         case "app1": app = <App />; break;
         case "app2": app = <App2 />; break;
         case "app4": app = <App4 />; break;
+        case "appjokes": app = <AppJokes />; break;
         case "app5": app = <App5 />; break;
         case "formdemo": app = <FormDemo />; break;
         case "formdemomultiple": app = <FormDemoMultiple />; break;
