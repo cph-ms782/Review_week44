@@ -2,19 +2,37 @@
 
 
 # Monday  
+Læringsmål:
+
+* Kunne redegøre for Pros/Cons ved Single Page Applications (SPA)
+* Kunne opsætte, forklare om og tilrette et React startprojekt via create-react-apps  
+* Kunne diskutere frontend frameworks og hvilke problemer de løser, hvilke er de mest populære?   Hvad er væsentlige forskelle og ligheder?
+* Kunne forklare om JSX og generelt opbygningen af React kode
+* Kunne forklare generelt om React, herunder Komponenter og kommunikation mellem Komponenter?
+
 [All Monday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/monday)  
-#### JavaScript/React  
+### JavaScript/React [exercise](https://docs.google.com/document/d/17iG0I2cpgdfmOIW9J-L8kNaO47DILFIzEc9Yi8yW6-o/edit?usp=sharing)  
 [1 Understanding ES6 Modules – import and export](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App.js) - 100% done  
 [2 Object and Array Destructuring](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App2.js) - 100% done  
 3 Composing Components - 0% done  
 
 # Tuesday  
+Læringsmål:
+
+  * Kunne forklare og demonstrere om Reacts måder at designe komponenter, functionelle, med og uden hooks,  samt kort om Klasse Komponents
+   * Kunne forklare og demonstrere brug af state i React med Hooks via useState
+   * Kunne forklare og   demonstrere sideeffekter i React med Hooks vis useEffect
+   * Kunne forklare og demonstrere brug af List og Keys
+   * Kunne forklare og demonstrere brug af array-metoderne, map, filter samt   reduce i forbindelse med dynamiske React-sider  
+
 [All tuesday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/tuesday)  
-#### State and Events with React  
-[1](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App3.js) - 100% done  
-[2](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App4.js) - 100% done  
-[3 (plus more files) - use "All tuesday files"-link to see them](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/AppJokes.js) - 100% done  
-#### Exercises Lists and Keys  
+### State med useState og useEffect [exercise](https://docs.google.com/document/d/1rE6hdpT_NPC_Hbxlo0nRYJwde_fQDGOiSjauKGYWcdU/edit?usp=sharing)  
+  
+[1 State and Events with React](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App3.js) - 100% done  
+[2 State and Events with React](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/App4.js) - 100% done  
+[3 State and Events with React (plus more files) - use "All tuesday files"-link to see them](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/AppJokes.js) - 100% done  
+
+### Exercises Lists and Keys [exercise](https://docs.google.com/document/d/1VlfZly4e6ZnCWJrv1LYhSDQMnBZn3NsyH7VQNLxCOME/edit?usp=sharing)  
 [1 Lists and Keys](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/ListDemoApp.js) - 100% done  
 [2 List and Keys continued](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/tuesday/ListDemoApp2.js) - 100% done  
 
@@ -38,8 +56,14 @@ _**setState()**_
   
 
 # Wednesday  
+Læringsmål:
+
+  * Kunne forklare og demonstrere håndtering af formdata i React med Controlled Components
+ * Kunne forklare og   demonstrere begreget Lifting State i React  
+
+
 [All wednesday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/wednesday)  
-#### Forms with React  
+### Forms with React [exercise](https://docs.google.com/document/d/1rEaU8ObqoxHF3vt_fIsTfEb3yLRnVF8fCWobJJ9c2wo/edit?usp=sharing)  
 [Forms and Controlled Components](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/FormDemo.js) - 100% done  
 [Handling multiple inputs](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/FormDemoMultiple.js) - 100% done  
 
@@ -64,9 +88,9 @@ _**We want to remain on the client and not go to the server. It prevents a blink
 _**A single source of truth keeps a tap on data received from forms and updates values when changes occur**_  
 
 
-#### Lifting State  
+### Lifting State [exercise](https://docs.google.com/document/d/1NTzbbMP2gWJoE2lDhD8tqGYNzQB1qSRqxb4PAtajWpI/edit?usp=sharing)  
 [Lifting State Up (plus more files)](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/wednesday/App5.js) - 100% done  
-[6  Lifting State Up 2]() - 0% done  
+6  Lifting State Up 2 - 0% done  
 
 * What is meant by the react term “Lifting State Up”  
 _**We want to remain on the client and not go to the server. It prevents a blinking page**_  
@@ -82,23 +106,19 @@ _**You get single source of truth. The parent componenet handles things**_
 
 
 # Thursday  
+Læringsmål:
+
+  *      Kunne forklare om fetch-API'et og demonstrere brug i egen kode
+  *   Kunne forklare om Promises i JavaScript og demonstrere brug i forbindelse med brug fetch-api'et
+  *   Kunne forklare og demonstrere et React projekt med fuld CRUD interaktion med et REST backend  
+
+
 [All thursday files](https://github.com/cph-ms782/Review_week44/tree/master/react-crud-rest-exercise/src/components)  
-#### Api Interaction with fetch  
+### Api Interaction with fetch [exercise](https://docs.google.com/document/d/1R7o42j_CJesnrCcNNRmIARK14ocDvMqodWDzzw6lDzg/edit?usp=sharing)    
 API Interaction using fetch (fall 2019) - 100% done  
 
 # Friday  
 [All friday files](https://github.com/cph-ms782/Review_week44/tree/master/ReactStateandFetch/src)  
-#### Exam preparation exercise  
+### Exam preparation exercise [exercise](https://docs.google.com/document/d/1AvT_g3dmCLP65Pw441KyDf4IeCYn-uhdUpcrvb92jyI/edit)  
 React, State and Fetch - 80% done  
 
-
-
-
-Læringsmål:
-
-  * Kunne demonstrere kode med grundlægende JPQL Queries  
-  * Kunne redegøre for konventioner ved opbygning af REST api'er  
-  * Kunne håndtere parametre i REST endpoints i egne kodeeksempler  
-  * Kunne implementere GET, POST, PUT og DELETE requests  
-  * Kunne redegøre for, og implementere DTO's og konvertere frem og tilbage mellem Java og JSON  
-  * Kunne vise med egne kodeeksempler, hvordan man håndterer POST med tilhørende JSON og får det deserialiseret til Java entiteter
