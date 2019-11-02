@@ -108,7 +108,7 @@ _**You get single source of truth. The parent componenet handles things**_
 # Thursday  
 Læringsmål:
 
-  *      Kunne forklare om fetch-API'et og demonstrere brug i egen kode
+  *   Kunne forklare om fetch-API'et og demonstrere brug i egen kode
   *   Kunne forklare om Promises i JavaScript og demonstrere brug i forbindelse med brug fetch-api'et
   *   Kunne forklare og demonstrere et React projekt med fuld CRUD interaktion med et REST backend  
 
