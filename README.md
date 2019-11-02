@@ -3,7 +3,7 @@
 
 # Monday  
 [All Monday files](https://github.com/cph-ms782/Review_week44/tree/master/exercises/src/monday)  
-####JavaScript/React
+####JavaScript/React  juhjåøp
 [1 Understanding ES6 Modules – import and export](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App.js) - 100% done  
 [2 Object and Array Destructuring](https://github.com/cph-ms782/Review_week44/blob/master/exercises/src/monday/App2.js) - 100% done  
 3 Composing Components - 0% done  
