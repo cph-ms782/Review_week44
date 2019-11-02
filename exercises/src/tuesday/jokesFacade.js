@@ -1,12 +1,12 @@
 //Add imports here
 let URLChuck = "https://api.chucknorris.io/jokes/random";
-let URLJokes = "https://icanhazdadjoke.com/api";
+let URLJokes = "https://icanhazdadjoke.com";
 
 function makeOptions(method, body) {
   var opts = {
     method: method,
     headers: {
-      "Content-type": "application/json"
+      Accept: 'application/json'
     }
   };
   if (body) {
@@ -25,7 +25,8 @@ function handleHttpErrors(res) {
 const jokesFacade = () => {
 
   const getDadJokes = async () => {
-    const data = await fetch(URLJokes).then(handleHttpErrors);
+    const options = makeOptions("GET"); // also insert relevant header
+    const data = await fetch(URLJokes, options).then(handleHttpErrors);
     return data;
   }
 
